@@ -173,7 +173,7 @@ footer .copy{font-size:0.82rem;color:var(--gray);}
 <header id="topbar">
   <div class="wrap topbar-inner">
     <a href="#hero" class="brand">Cande <span style="font-size:1rem;">🇦🇷 🇪🇸</span></a>
-    <a class="btn btn-celeste btn-small whatsapp-link" href="#" target="_blank" rel="noopener">🎓 <span class="btn-text-full">Book Your First Lesson</span></a>
+    <a class="btn btn-primary btn-small calendly-link" href="#" target="_blank" rel="noopener">🎓 <span class="btn-text-full">Book Your First Lesson</span></a>
   </div>
 </header>
 
@@ -191,6 +191,7 @@ footer .copy{font-size:0.82rem;color:var(--gray);}
         <li>🎓 Book your first lesson!</li>
       </ul>
       <div class="hero-cta">
+        <a class="btn btn-primary calendly-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
         <div class="hero-cta-secondary">
           <a class="btn btn-primary whatsapp-link" href="#" target="_blank" rel="noopener">WhatsApp</a>
           <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=61594811615314" target="_blank" rel="noopener">Facebook</a>
@@ -214,7 +215,7 @@ footer .copy{font-size:0.82rem;color:var(--gray);}
   <div class="wrap reveal">
     <h2>Try Your First Spanish Lesson</h2>
     <p>Meet Cande, experience her teaching style, and let's talk about your Spanish goals.</p>
-    <a class="btn btn-celeste whatsapp-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
+    <a class="btn btn-primary calendly-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
   </div>
 </section>
 
@@ -270,7 +271,7 @@ footer .copy{font-size:0.82rem;color:var(--gray);}
   <div class="wrap reveal">
     <h2>Ready to Start Speaking Spanish? 🇪🇸</h2>
     <p>Book your first lesson and let's start working on your Spanish together.</p>
-    <a class="btn btn-celeste whatsapp-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
+    <a class="btn btn-primary calendly-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
   </div>
 </section>
 
@@ -295,6 +296,12 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
 
 document.querySelectorAll(".whatsapp-link").forEach(function (link) {
   link.setAttribute("href", whatsappLink);
+});
+
+const calendlyLink = "https://calendly.com/candelafornero/30min";
+
+document.querySelectorAll(".calendly-link").forEach(function (link) {
+  link.setAttribute("href", calendlyLink);
 });
 
 // Topbar background on scroll
