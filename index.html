@@ -144,6 +144,24 @@ h1,h2,h3{font-family:var(--font-display);font-weight:700;letter-spacing:-0.02em;
 #cta-final .btn-outline{border-color:rgba(255,255,255,0.2);color:#fff;background:transparent;}
 #cta-final .btn-outline:hover{border-color:var(--accent);color:var(--accent);}
 
+/* ===== PRICING ===== */
+#plans{background:var(--white);}
+.plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:920px;margin:0 auto;align-items:center;}
+.plan{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:38px 28px;text-align:center;display:flex;flex-direction:column;align-items:center;transition:transform .25s ease, box-shadow .25s ease;}
+.plan:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(27,58,92,0.08);}
+.plan-lessons{font-size:1.05rem;font-weight:500;color:var(--gray);margin-bottom:10px;}
+.plan-price{font-family:var(--font-display);font-weight:700;font-size:3rem;color:var(--ink);line-height:1;letter-spacing:-0.03em;}
+.plan-price small{font-family:var(--font-body);font-size:0.95rem;font-weight:500;color:var(--gray);letter-spacing:0;margin-left:4px;}
+.plan-per{font-size:0.88rem;color:var(--gray);margin:12px 0 26px;}
+.plan-save{display:inline-block;margin-top:-14px;margin-bottom:22px;font-size:0.78rem;font-weight:700;color:#0F8A4F;background:#E6F7EE;padding:4px 12px;border-radius:999px;}
+.plan .btn{width:100%;padding:14px 18px;font-size:0.94rem;}
+.plan-popular{border:1.5px solid var(--accent);padding:48px 28px;box-shadow:0 22px 50px rgba(47,143,224,0.16);}
+.plan-badge{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;font-size:0.74rem;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;padding:7px 18px;border-radius:999px;margin-bottom:18px;}
+@media (max-width:860px){
+  .plans-grid{grid-template-columns:1fr;max-width:400px;gap:18px;}
+  .plan-popular{order:-1;}
+}
+
 /* ===== FOOTER ===== */
 footer{padding:40px 0;text-align:center;border-top:1px solid var(--line);}
 .footer-links{display:flex;justify-content:center;gap:22px;margin-bottom:14px;flex-wrap:wrap;}
@@ -246,6 +264,38 @@ footer .copy{font-size:0.82rem;color:var(--gray);}
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></div>
         <h3>Personalized Lessons</h3>
         <p>Every lesson is built around your level, goals and pace — kids welcome too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LESSON PLANS -->
+<section id="plans">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="justify-content:center;">Lesson Plans</div>
+      <h2>Choose Your Spanish Lesson Plan</h2>
+    </div>
+    <div class="plans-grid">
+      <div class="plan reveal">
+        <div class="plan-lessons">10 Lessons</div>
+        <div class="plan-price">$100<small>USD</small></div>
+        <div class="plan-per">$10 per lesson</div>
+        <a class="btn btn-outline calendly-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
+      </div>
+      <div class="plan plan-popular reveal">
+        <div class="plan-badge">⭐ Most Popular</div>
+        <div class="plan-lessons">20 Lessons</div>
+        <div class="plan-price">$200<small>USD</small></div>
+        <div class="plan-per">$10 per lesson</div>
+        <a class="btn btn-primary calendly-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
+      </div>
+      <div class="plan reveal">
+        <div class="plan-lessons">30 Lessons</div>
+        <div class="plan-price">$290<small>USD</small></div>
+        <div class="plan-per">$9.67 per lesson</div>
+        <div class="plan-save">Save $10</div>
+        <a class="btn btn-outline calendly-link" href="#" target="_blank" rel="noopener">🎓 Book Your First Lesson</a>
       </div>
     </div>
   </div>
